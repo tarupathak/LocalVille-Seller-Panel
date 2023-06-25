@@ -112,9 +112,10 @@
 
 #profile-card {
   width: 75vw;
-  height: 25vw;
+  height: fit-content;
   margin-top: 2vh;
   margin-left: 20vw;
+  padding: 2vw;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -133,6 +134,7 @@
 
 #btn-bottom .rs-btn {
   margin-top: 35vh;
+  color: black;
 }
 
 #outline {
@@ -142,12 +144,14 @@
   border: 1px dashed #6d44bc;
   align-items: center;
   border-radius: 1vw;
-  height: 13vw;
+  height: fit-content;
   width: 13vw;
 }
 
 #outline img {
-  margin-top: 1vh;
+  margin: .4vw;
+  height: 12vw;
+  width: 16vw;
 }
 
 #text-box input {
@@ -156,6 +160,7 @@
   height: 3.5vw;
   border-radius: 0.7vw;
   margin-top: 3vh;
+  font-size: 1vw;;
   padding-left: 2vw;
 }
 
@@ -164,4 +169,19 @@
   font-size: 1vw;
   font-weight: 600;
   margin-top: 15vh;
+}
+
+#btn-bottom img{
+  height: 2vw;
+}
+
+@media (max-width: 500px) {
+  #profile-card{
+    flex-direction: column;
+  }
+
+  #btn-bottom .rs-btn {
+    margin-top: 2vh;
+    color: black;
+  }
 }
