@@ -1,95 +1,94 @@
 .navbar {
-	background: #fff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-	width: 100vw;
-	height: 4rem;
-	position: fixed !important;
-	top: 0;
-	z-index: 1;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  width: 100vw;
+  height: 4rem;
+  position: fixed !important;
+  top: 0;
+  z-index: 1;
 }
 
 .logo {
-	cursor: pointer;
-	padding-left: 4rem;
+  cursor: pointer;
+  padding-left: 4rem;
 }
 
 .profile-logo {
-	width: 2.0625rem;
-	height: 2.0625rem;
-	flex-shrink: 0;
-	padding-right: 5px;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  flex-shrink: 0;
+  padding-right: 5px;
 }
 
 .navbar_img {
-	width: 6.625rem;
-	height: 2.25rem;
-	flex-shrink: 0;
+  width: 6.625rem;
+  height: 2.25rem;
+  flex-shrink: 0;
 }
 
 .nav-content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .notify-text {
-	padding-right: 5rem;
-	display: flex;
-	align-items: center;
-	color: #2f3367;
-	font-size: 0.68488rem;
-	font-family: Poppins;
-	font-weight: 500;
+  padding-right: 5rem;
+  display: flex;
+  align-items: center;
+  color: #2f3367;
+  font-size: 0.68488rem;
+  font-family: Poppins;
+  font-weight: 500;
 }
 
 .notify-profile {
-	display: flex;
-	flex-direction: row;
-	flex-shrink: 0;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
 }
 
 .notify-profile-contents {
-	padding: 0 5rem 0 0;
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 0;
+  padding: 0 5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
 .notify-profile-contents h4 {
-	margin: 0;
-	padding: 0;
-	color: #2f3367;
-	font-size: 0.58931rem;
-	font-family: Open Sans;
-	font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #2f3367;
+  font-size: 0.58931rem;
+  font-family: Open Sans;
+  font-weight: 700;
 }
 
 .notify-profile-contents p {
-	margin: 0;
-	padding: 0;
-	color: #2f3367;
-	font-size: 0.51563rem;
-	font-family: Open Sans;
+  margin: 0;
+  padding: 0;
+  color: #2f3367;
+  font-size: 0.51563rem;
+  font-family: Open Sans;
 }
 
 @media screen and (max-width: 768px) {
 }
 
-
 /* Drawer.css */
 .sidebar {
-	height: 100vh; /* Set the sidebar height to 100% of the viewport */
-	width: 15rem; /* Let the width adjust to the content */
-	display: flex;
-	flex-direction: column;
-	background-color: white; /* Set the sidebar background color to white */
-	margin-top: 4rem; /* Add margin-top of 5rem */
-	position: fixed;
-	justify-content: center; /* Add
+  height: 100vh; /* Set the sidebar height to 100% of the viewport */
+  width: 15rem; /* Let the width adjust to the content */
+  display: flex;
+  flex-direction: column;
+  background-color: white; /* Set the sidebar background color to white */
+  margin-top: 4rem; /* Add margin-top of 5rem */
+  position: fixed;
+  justify-content: center; /* Add
 	align-items: center;	
 }
 
@@ -98,13 +97,71 @@
 }
 
 .sidebar .pro-sidebar-menu {
-	padding: 0;
+  padding: 0;
 }
 
 .sidebar .pro-sidebar-menu .pro-menu-item {
-	color: #000; /* Set the default font color */
+  color: #000; /* Set the default font color */
 }
 
 .sidebar .pro-sidebar-menu .pro-menu-item.selected {
-	color: #6d44bc; /* Set the font color for selected items */
+  color: #6d44bc; /* Set the font color for selected items */
+}
+
+/* Profile Card */
+
+#profile-card {
+  width: 75vw;
+  height: 25vw;
+  margin-top: 2vh;
+  margin-left: 20vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 2px 20px 0px #00000026;
+}
+
+#text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-bottom .rs-btn {
+  margin-top: 35vh;
+}
+
+#outline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px dashed #6d44bc;
+  align-items: center;
+  border-radius: 1vw;
+  height: 13vw;
+  width: 13vw;
+}
+
+#outline img {
+  margin-top: 1vh;
+}
+
+#text-box input {
+  border: 2px solid #40407680;
+  width: 22vw;
+  height: 3.5vw;
+  border-radius: 0.7vw;
+  margin-top: 3vh;
+  padding-left: 2vw;
+}
+
+#heading {
+  margin-left: 20vw;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-top: 15vh;
 }
