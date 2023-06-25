@@ -12,10 +12,10 @@ const ProfileCard = () => {
           <img src={profileImg} alt="profile-img" />
         </div>
         <div id="text-box">
-          <input />
-          <input />
-          <input />
-          <input />
+          <input placeholder="Name" type="text"/>
+          <input placeholder="E-mail" type="mail"/>
+          <input placeholder="Contact Number" type="number"/>
+          <input placeholder="Withdraw" type="text"/>
         </div>
         <div id="btn-bottom">
           <ButtonToolbar>
