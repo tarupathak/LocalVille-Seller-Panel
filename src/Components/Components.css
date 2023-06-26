@@ -80,6 +80,7 @@
 }
 
 /* Drawer.css */
+
 .sidebar {
   height: 100vh; /* Set the sidebar height to 100% of the viewport */
   width: 15rem; /* Let the width adjust to the content */
@@ -128,8 +129,9 @@
 #text-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+
 }
 
 #btn-bottom .rs-btn {
@@ -155,7 +157,7 @@
 }
 
 #text-box input {
-  border: 2px solid #40407680;
+  border: .4vh solid #40407680;
   width: 22vw;
   height: 3.5vw;
   border-radius: 0.7vw;
@@ -184,4 +186,43 @@
     margin-top: 2vh;
     color: black;
   }
+
+  #text-box input{
+    border: .1vw solid #40407680;
+    margin-top: 0vh;
+  }
 }
+
+/* .inputBox{
+  position: relative;
+  width: 250px;
+}
+
+.inputBox input{
+  border: .4vh solid #40407680;
+  width: 22vw;
+  height: 3.5vw;
+  border-radius: 0.7vw;
+  margin-top: 3vh;
+  font-size: 1vw;;
+  padding-left: 2vw;
+  transition: 0.5s;
+}
+
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  transition: 0.5s;
+
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  padding: 0 10px;
+  
+} */
